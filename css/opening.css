@@ -92,15 +92,16 @@ footer {
     /*margin-right: 20em;*/
     /*padding: 100px 20px;*/
     /*position: relative;*/
-    text-align: left;
+    /*text-align: left;*/
     /*width: 820px; */
   }
 
   .intro-text{
     color: white;
-    vertical-align: middle;
-
+    vertical-align: baseline;
+    text-align: right;
     font: 400 18px/20px Arvo;
+    padding-top: 15px
   }
 .accent{
   color: #CC4425;
@@ -108,15 +109,17 @@ footer {
   padding: 2px;
 }
 
+
 #headline {
   /*background: #000; */
-  background: url("../img/bg_opening.jpg"), rgba(0,0,0,0.5);
+  background: url("../img/bg_opening.jpg"), rgba(0,0,0,0.6);
   background-blend-mode: overlay;
   background-size: cover;}
   #headline .text {
     /*width: 50%; */
-    border-right: 8px solid #BFBFBF;}
+    /*border-left: 8px solid #BFBFBF;*/
+  }
   #headline h1 {
     color: #fff;
-    font: 400 60px/56px Abril Fatface;
-    text-align: right; }
+    font: 700 62px/66px Oswald;
+    text-transform: uppercase; }
