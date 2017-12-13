@@ -12,7 +12,7 @@
 
     <title>Google Web Fonts Typographic Project</title>
     <link href="css/simple-grid.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css" />
     
     <link href="css/custom3.css" rel="stylesheet">
     <!-- <link href="css/timeline.css" rel="stylesheet"> -->
@@ -24,13 +24,27 @@
 
     <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.3.11/min/tiny-slider.helper.ie8.js"></script><![endif]-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.3.11/min/tiny-slider.js"></script>
+    <script src="js/float-panel.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 
 
 </head>
 
 <body>
 
+<nav id="menu">
+                <div class="menuitm" >
+                    <a href="file:///Users/chandakmayank/CEPT-Eviction-project/index.html"><i class="fa fa-home"></i>&nbsp;Home&nbsp;</a>
+                    <a href="#">Contact&nbsp;</a>
+                    <a href="#">Legal&nbsp;</a>
+                </div>
+
+</nav>
+            
     <div id="fullpage">
+
+
         <div class="section"><embed src="https://snazzymaps.com/embed/34717" width="100%" height="100%" style="border:none;"></embed></div>
 
         
@@ -45,18 +59,18 @@
             <div class="container twelve smaller section">
                 History and timeline
             </div>
-            <div class="container twelve section"><h2>Story of People</h2>
+            <div class="container twelve section">
                 <div class="row">
-                        <img class="col-4" src="img/origin.jpg">
-                        <img class="col-4" src="img/sample-occupations.png">
+                    <img class="col-4" src="img/origin.jpg">
+                    <img class="col-4" src="img/sample-occupations.png">
                 </div>
 
             </div>
             <div class="container twelve section">
-                <h1>Place</h1>
+              
 
             </div>
-            <div class="container twelve section"><h1>Gallery</h1></div>
+            <div class="container twelve section"></div>
 
 
         </div>
@@ -77,7 +91,12 @@
 <script>$("#map").load("https://snazzymaps.com/embed/34717");</script>
 <script>
     $(document).ready(function() {
-        $('#fullpage').fullpage();
+        $('#fullpage').fullpage({
+            menu: '#menu',
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Map', 'Introduction','Eviction Process','History','People','Place','Gallery'],
+        showActiveTooltip: true});
     });
 </script>
 </html>
