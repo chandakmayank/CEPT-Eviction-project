@@ -121,6 +121,11 @@ footer {
   }
   #headline h1 {
     color: #fff;
-    font: 700 62px/66px Oswald;
+    font: 700 72px/74px Oswald;
     letter-spacing: 2px;
     text-transform: uppercase; }
+  #headline h2 {
+    color: #fff;
+    font: 700 40px/48px Oswald;
+    letter-spacing: 2px;
+    text-transform: uppercase;

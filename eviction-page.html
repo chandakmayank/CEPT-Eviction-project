@@ -26,6 +26,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.3.11/min/tiny-slider.js"></script>
     <script src="js/float-panel.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    <script src="js/masonry.pkgd.min.js"></script>
+
 
 
 
@@ -33,15 +36,19 @@
 
 <body>
 
-<nav id="menu">
-                <div class="menuitm" >
-                    <a href="file:///Users/chandakmayank/CEPT-Eviction-project/index.html"><i class="fa fa-home"></i>&nbsp;Home&nbsp;</a>
-                    <a href="#">Contact&nbsp;</a>
-                    <a href="#">Legal&nbsp;</a>
-                </div>
+    <nav id="menu">
+        <div class="menuitm" >
+            <a href="#"><i class="fa fa-home"></i>&nbsp;Home&nbsp;</a>
+            <a href="file:///Users/chandakmayank/CEPT-Eviction-project/index.html">About</a>
+            <a href="#">Team</a>
+                        <a href="#">Eviction</a>
+            <a href="#">Resettlement</a>
 
-</nav>
-            
+            <a href="#">Contact</a>
+        </div>
+
+    </nav>
+
     <div id="fullpage">
 
 
@@ -66,19 +73,32 @@
                 </div>
 
             </div>
-            <div class="container twelve section">
-              
+            <div class="section">
+                <img class="wide" src="img/place_sketch.jpg" alt="">
 
             </div>
-            <div class="container twelve section"></div>
+            <div id="gallery" class=" section">
+                <div class="container grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 317, "gutter":3 }'>
+                  <div class="grid-item"><img src="img/1.jpg"/></div>
+                  <div class="grid-item"><img src="img/2.jpg"/></div>
+                  <div class="grid-item"><img src="img/3.jpg"/></div>
+                  <div class="grid-item"><img src="img/4.jpg"/></div>
+                  <div class="grid-item"><img src="img/5.jpg"/></div>
+                  <div class="grid-item"><img src="img/6.jpg"/></div>
+                  <div class="grid-item"><img src="img/7.jpg"/></div>
+                  <div class="grid-item"><img src="img/8.jpg"/></div>
+                  <div class="grid-item"><img src="img/9.jpg"/></div>
+
+              </div>
+          </div>
 
 
-        </div>
-    </body>
+      </div>
+  </body>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>
-    <script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>
+  <script>
       var slider = tns({
         container: '.my-slider',
         items: 2,
@@ -93,10 +113,12 @@
     $(document).ready(function() {
         $('#fullpage').fullpage({
             menu: '#menu',
-        navigation: true,
-        navigationPosition: 'right',
-        navigationTooltips: ['Map', 'Introduction','Eviction Process','History','People','Place','Gallery'],
-        showActiveTooltip: true});
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['Map', 'Introduction','Eviction Process','History','People','Place','Gallery'],
+            showActiveTooltip: true});
     });
+
+
 </script>
 </html>

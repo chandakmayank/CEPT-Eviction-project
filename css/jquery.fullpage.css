@@ -154,8 +154,8 @@ html.fp-enabled,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span{
-    height: 12px;
-    width: 12px;
+    height: 13px;
+    width: 13px;
     margin: -6px 0 0 -6px;
     border-radius: 100%;
  }
@@ -178,8 +178,8 @@ html.fp-enabled,
 }
 #fp-nav ul li:hover a span,
 .fp-slidesNav ul li:hover a span{
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     margin: -5px 0px 0px -5px;
 }
 #fp-nav ul li .fp-tooltip {
